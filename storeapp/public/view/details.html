@@ -1,0 +1,8 @@
+<div ng-controller="ItemDetailsCtrl">
+	<h1>{{item.name}}</h1>
+	<h2>{{item.price|currency}}</h2>
+	<img src="data:{{item.img.contentType}};base64,{{item.img.data}}">
+	<button class="btn btn-danger" ng-click="deleteItem()">Delete</button>
+	<a href="#/edit/{{item._id}}"><button class="btn btn-warning">Edit</button></a>
+	<button class="btn btn-primary" ng-click="back()">Main page</button>
+</div>

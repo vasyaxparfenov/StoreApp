@@ -1,0 +1,16 @@
+{
+  "name": "TZ",
+  "version": "1.0.0",
+  "description": "DO IT!",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.2",
+    "mongodb": "^2.1.2",
+    "mongoose": "^4.3.4",
+    "connect-multiparty":"^2.0.0",
+    "fs":"^0.0.2"
+  },
+  "author": "Vasya Parfenov"
+}
+

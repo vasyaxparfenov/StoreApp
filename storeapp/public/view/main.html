@@ -1,0 +1,22 @@
+<div class='container' ng-controller="StoreCtrl">
+	<h1>Items</h1>
+	<button class="btn btn-primary"
+			onclick="location.href='#/addimage'">Add image</button>
+	<table class="table">
+		<thead>
+				<tr>
+					<th>Name</th>
+					<th>Price</th>
+					<th>More</th>
+				</tr>	
+		</thead>
+		<tbody>
+				<tr ng-repeat ="item in items">
+					<td>{{item.name}}</td>
+					<td>{{item.price | currency}}</td>
+					<td><a href="#/{{item._id}}"><button class="btn btn-primary">Info</button></a></td>
+				</tr>
+		</tbody>
+
+	</table>
+</div>

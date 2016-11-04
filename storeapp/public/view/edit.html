@@ -1,0 +1,11 @@
+<div class="container" ng-controller="EditCtrl">
+	<img src="data:{{item.img.contentType}};base64,{{item.img.data}}">
+	<form action="/upload" enctype="multipart/form-data" method="post">
+   <p><input type="file" name="f">
+   <input type="submit" value="Изменить"></p>
+</form>
+   	<p>Название:</p><input class="form-control" ng-model="item.name">
+   	<p>Цена:</p><input class="form-control" ng-model="item.price">
+   	<button class="btn btn-primary" ng-click="edit()">Edit</button>
+   	<a href="#/{{item._id}}"><button class="btn btn-danger">Cancel</button>
+</div>
